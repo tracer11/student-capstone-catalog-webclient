@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get '/' => 'capstones#index'
-  get '/capstones/:id' => 'capstones#show'
+  get '/' => 'students#index'
+  get '/students/:id' => 'students#show'
 end
