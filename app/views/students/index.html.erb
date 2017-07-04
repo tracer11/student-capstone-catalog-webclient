@@ -1,10 +1,10 @@
 <h1> Student Capstones </h1>
 
-<% @#Students.each do |student| %>
-  <h2><a href="/students/<%= #Student.id %>"> <%= #Student.first_name %></h2>
-  <h3><%= #Student.capstone.name  %></h3> 
-  <h3><%= #Student.capstone.screenshot %></h3>
-  <img src="<%= #Student.capstone.screenshot.url %>" style="width:180px;height:228px;">
+<% @Students.each do |student| %>
+  <h2><a href="/students/<%= student.id %>"> <%= Student.first_name %></h2>
+  <h3><%= student.capstones.first.name  %></h3> 
+  <!-- <h3><%= #student.capstone.first.screenshot %></h3>
+  <img src="<%= #Student.capstone.screenshot.url %>" style="width:180px;height:228px;"> -->
   <br>
 
 <% end %> 
